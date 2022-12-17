@@ -57,7 +57,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="benefits section">
@@ -117,21 +117,30 @@
           <h2 class="discription-title">Чим ми займаємося</h2>
           <ul class="discription list">
             <li>
-              <img src="./images/boxone.png" alt="людина верстає код" width="370" />
+              <div class="thumb discription">
+                <img src="./images/boxone.png" alt="людина верстає код" width="370" />
+                <h3 class="discription text">Десктопні додатки</h3>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/box2.png"
-                alt="людина створює додатки для смартфонів"
-                width="370"
-              />
+              <div class="thumb discription">
+                <img
+                  src="./images/box2.png"
+                  alt="людина створює додатки для смартфонів"
+                  width="370"
+                />
+                <h3 class="discription text">Мобільні додатки</h3>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/box3.png"
-                alt="людина обирає колір з політри на смартфоні"
-                width="370"
-              />
+              <div class="thumb discription">
+                <img
+                  src="./images/box3.png"
+                  alt="людина обирає колір з політри на смартфоні"
+                  width="370"
+                />
+                <h3 class="discription text">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -369,34 +378,40 @@
         </div>
         <div class="social block">
           <h3 class="social title">Приєднуйтесь</h3>
-           <ul class="list social-network footer">
-                      <li class="social-item footer">
-                        <a class="social link" href=""
-                          ><svg width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use></svg
-                        ></a>
-                      </li>
-                      <li class="social-item footer">
-                        <a class="social link" href=""
-                          ><svg width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use></svg
-                        ></a>
-                      </li>
-                      <li class="social-item footer">
-                        <a class="social link" href=""
-                          ><svg width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook"></use></svg
-                        ></a>
-                      </li>
-                      <li class="social-item footer">
-                        <a class="social link" href=""
-                          ><svg width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use></svg
-                        ></a>
-                      </li>
-                    </ul>
+          <ul class="list social-network footer">
+            <li class="social-item footer">
+              <a class="social link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="social-item footer">
+              <a class="social link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="social-item footer">
+              <a class="social link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="social-item footer">
+              <a class="social link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal"><button type="button" class="close" data-modal-close><svg widh="11" height="11" >
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg></button></div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
